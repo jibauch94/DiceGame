@@ -63,11 +63,10 @@ public class MainActivity extends AppCompatActivity {
         //set initial score
         score = 0;
 
-        // create grreting
+        // create greeting
         Toast.makeText(getApplicationContext(),"Welcome to DiceGame!", Toast.LENGTH_SHORT).show();
 
         rollResult = (TextView) findViewById(R.id.rollResult);
-
         scoreText = (TextView) findViewById(R.id.scoreText);
 
         //initialize the random number generator
