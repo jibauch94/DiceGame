@@ -26,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
     //field to hold result text
     TextView rollResult;
 
-    //field to hold roll button
-    Button rollButton;
-
     //field to hold score
     int score;
 
@@ -58,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                rollDice(view);
+
             }
         });
 
@@ -70,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"Welcome to DiceGame!", Toast.LENGTH_SHORT).show();
 
         rollResult = (TextView) findViewById(R.id.rollResult);
-        rollButton = (Button) findViewById(R.id.rollButton);
+
         scoreText = (TextView) findViewById(R.id.scoreText);
 
         //initialize the random number generator
